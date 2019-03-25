@@ -1,0 +1,721 @@
+/*清除默认样式*/
+*{margin: 0;padding: 0;}
+body{color: #333;}
+div{box-sizing: border-box;}
+ol,ul,li{list-style: none;}
+a{text-decoration: none;color: #ccc;}
+img{
+	display: inline-block;
+}
+/*公共样式*/
+.body{
+	font-family: "helvetica neue",arial,sans-serif;
+    font-size: 14px;
+    color: #444;
+}
+.page{
+	width: 100%;
+}
+a{
+	color: #222;
+    text-decoration: none;
+    outline: 0;
+
+}
+a:hover {
+    color: #9A0000;
+    text-decoration: underline;}
+.active{
+	border-bottom: 1px solid white;
+}
+/*头部样式*/
+.head-box{
+	width: 100%;
+	height: 500px;
+}
+.banner-bg{
+	background-image: url(http://hbfile.b0.upaiyun.com/img/home/banner/632a0d9115b1373944b51cc6c68f27f5348fa52fc447e);
+	opacity: 1;
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	background-position: center 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.new-banner{
+	height: 500px;
+	margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.new-banner .title{
+	width: 540px;
+	height: 54px;
+	margin: 118px auto 40px;
+	line-height: 54px;
+    color: #fff;
+    font-family: "sy-sans";
+    font-size: 44px;
+    font-weight: 50;
+    text-align: center;
+}
+.new-banner .search-box{
+	width: 100%;
+	height: 69px;
+	text-align: center;
+}
+.new-banner .search-box .searching-unit{
+	width: 536px;
+	height: 40px;
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+}
+.new-banner .search-box .searching-unit input{
+	margin: 0 auto;
+    padding: 0 10px;
+    width: 536px;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,.95);
+    border-radius: 2px;
+    background-color: rgba(255,255,255,.95);
+    box-sizing: border-box;
+}
+.new-banner .search-box .searching-unit .go{
+	position: absolute;
+    display: block;
+    top: 1px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: url(http://huaban.com/img/new_index/icon_search.svg) 9px 9px no-repeat;
+    cursor: pointer;
+}
+.new-banner .search-box .hot-words{
+	margin-top: 10px;
+    color: rgba(255,255,255,.7);
+    text-align: center;
+}
+.new-banner .search-box .hot-words a{
+	display: inline-block;
+    padding-right: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.new-banner .author{
+	position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    text-align: right;
+}
+.new-banner .author .author-in{
+	width: 1249px;
+	position: relative;
+	margin: 0 auto;
+}
+.new-banner .author .author-in span{
+	color: #fff;
+}
+.new-banner .author .author-in a{
+	color: rgba(255,255,255,.85);
+}
+.head-box .header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 48px;
+	background: 0;
+	z-index: 998;
+	/*overflow: hidden;*/
+}
+.head-box .header .header-in{
+	margin: 0 auto;
+	width: 1248px;
+}
+.head-box .header .header-in .header-wrap{
+	height: 48px;
+	/*text-align: center;*/
+}
+.head-box .header .header-in .header-wrap .more{
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 24px;
+	height: 28px;
+	margin-right: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+.header-left{
+	float: left;
+	margin-top: 10px;
+
+}
+
+.header-search{
+	float: right;
+}
+#huaban_logo{
+	float: left;
+    margin-right: 20px;
+    width: 80px;
+    height: 28px;
+    background: url(http://huaban.com/img/logo_wt.svg) 0 0 no-repeat;
+}
+.header-item{
+	line-height: 28px;
+	color: rgba(255,255,255,.85);
+	position: relative;
+    float: left;
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.header-item:hover{
+	color: rgba(255,255,255,.85);
+	text-decoration: none;
+	border-bottom: 1px solid white;
+}
+.active{
+	border-bottom: 1px solid white;
+}
+.header-right{
+	float: right;
+	margin-left: 20px;
+	width: 130px;
+	height: 48px;
+}
+.header-right .login-nav{
+	width: 130px;
+	height: 48px;
+	/*display: inline-block;*/
+    line-height: 48px;
+}
+.header-right .login-nav a{
+	border: 1px solid rgba(255,255,255,.8);
+    color: #fff;
+    float: left;
+    margin-top: 7px;
+    padding: 0 15px;
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 2px;
+   /* position: relative;*/
+}
+.header-right .login-nav .login{
+	margin-right: 10px;
+}
+.header-right .login-nav .register{
+   background: #ec414d;
+   border: 1px solid #ec414d;
+}
+.header-right .login-nav .login:hover{
+   text-decoration: none;
+   background: #fff;
+   color: #000;
+}
+.header-right .login-nav .register:hover{
+   text-decoration: none;
+}
+/*内容样式*/
+.content{
+	width: 1248px;
+	margin: 0 auto;
+}
+.recommend-line{
+	position: relative;
+    padding: 20px 0;
+    text-align: center;
+}
+.recommend-line:before{
+	display: block;
+    position: absolute;
+    top: 28px;
+    width: 44%;
+    content: "";
+    border-top: 1px solid #ededed;
+    left: 0;
+}
+.recommend-line:after{
+	display: block;
+    position: absolute;
+    top: 28px;
+    width: 44%;
+    content: "";
+    border-top: 1px solid #ededed;
+    right: 0;
+}
+.recommend-line a{
+	display: inline-block;
+    font-size: 16px;
+    color: #999;
+}
+/*推荐作品图样*/
+.category-image-box{
+	margin: 16px -16px 0 0;
+    overflow: hidden;
+    margin-top: 0;
+    height: 178px;
+}
+.category-image{
+	position: relative;
+    display: block;
+    float: left;
+    margin: 0 16px 16px 0;
+    width: 236px;
+    height: 170px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.category-image img{
+	display: inline-block;
+	width: 236px;
+}
+.recommend-container-row{
+	margin-bottom: 4px;
+	height: 308px;
+}
+.recommend-box{
+	float: left;
+    width: 308px;
+    height: 308px;
+    margin-right: 4px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.recommend-infobox{
+	position: relative;
+	padding: 10px 16px;
+	width: 100%;
+	background:#fafafa;
+	box-sizing: border-box;
+	z-index: 1;
+}
+.recommend-infobox:hover{
+	background-color: #f5f5f5;
+}
+.recommend-data{
+	position: absolute;
+	padding: 0 20px 5px 0;
+	width: 80px;
+	border-bottom: 1px solid #ededed;
+	background: url(http://huaban.com/img/new_index/box_title_sprite.svg) -140px 0 no-repeat;
+	text-indent: -999em;
+	height: 40px;
+    background-position: 0 0;
+    display: block;
+}
+/*左右小箭头图*/
+.inf-tra-left{
+	top: 21%;
+    left: -14px;
+    background-position: 0 0;
+    position: absolute;
+    width: 14px;
+    height: 28px;
+    background: url(http://huaban.com/img/new_index/info_tra.svg) no-repeat;
+    z-index: 9997;
+}
+.inf-tra-right{
+	top: 74%;
+    right: -14px;
+    background-position: 0 -51px;
+    position: absolute;
+    width: 14px;
+    height: 28px;
+    background: url(http://huaban.com/img/new_index/info_tra.svg) no-repeat;
+    z-index: 9997;
+}
+.recommend-infobox h2{
+	line-height: 20px;
+    margin-top: 54px;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 50px 0 3px 0;
+    letter-spacing: -.0125em;
+} 
+.recommend-infobox h2 a{
+	display: inline-block;
+	height: 20px;
+	overflow: hidden;
+}
+.recommend-infobox h2 a:hover{
+	text-decoration: none;
+}
+.recommend-infobox p{
+	font-size: 12px;
+}
+.recommend-infobox p{
+	color: #bbb;
+	margin-right: 10px;
+}
+.recommend-infobox>span{
+	margin-top: 10px;
+	display: inline-block;
+	color: #999;
+}
+.recommend-infobox>span>a{
+	margin-left: 5px;
+	color: #9e7e6b;
+}
+.pl-right{
+	height: 152px;
+    margin-bottom: 4px;
+    text-align: right;
+}
+.pl-right .recommend-data{
+	right: 16px;
+    padding: 0 0 5px 20px;
+}
+.recommend-hide{
+	float: left;
+    position: relative;
+}
+.recommend-hide-info{
+	display: block;
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    background: rgba(0,0,0,.4);
+    width: auto;
+    height: 56px;
+    overflow: inherit;
+    padding: 8px 16px;
+}
+.recommend-hide-data{
+	position: absolute;
+    left: -30px;
+    width: 30px;
+    height: 56px;
+    background-color: rgba(50,50,50,.4);
+    background-position: -236px 7px;
+    background: url(http://huaban.com/img/new_index/box_title_sprite.svg) -140px 0 no-repeat;
+    text-indent: -999em;
+ }
+.recommend-hide-info h2{
+	margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+}
+.recommend-hide-info h2 a{
+	display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 400;
+}
+.recommend-hide-info h2 a:hover{
+	text-decoration: none;
+	color: #c90000;
+}
+.recommend-hide-info p span{
+	color: #bbb;
+	font-size: 12px;
+}
+.get-more-line{
+	position: relative;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 2px;
+}
+.get-more-line a{
+	padding: 10px;
+    width: 49%;
+    background-color: #f7f7f7;
+    display: inline-block;
+    font-size: 16px;
+    color: #999;
+}
+.get-more-line:before{
+	width: 22%;
+    top: 38px;
+    display: block;
+    position: absolute;
+    content: "";
+    border-top: 1px solid #ededed;
+    left: 0;
+}
+.get-more-line:after{
+	width: 22%;
+    top: 38px;
+    display: block;
+    position: absolute;
+    content: "";
+    border-top: 1px solid #ededed;
+    right: 0;
+}
+.new-index-category-head{
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #ededed;
+	height: 28px;
+}
+.new-index-category-head .title{
+	/*display: inline-block;*/
+	float: left;
+    font-size: 16px;
+}
+.new-index-category-head .all-pins{
+	float: right;
+	font-size: 16px;
+	display:inline-block;
+}
+.new-index-category-head .all-pins a{
+	color: #9E7E6B;
+	display: inline-block;	
+}
+.new-index-category-body{
+	margin-bottom: 42px;
+	height: 182px;
+}
+.new-index-category-body .new-index-category-group{
+	width: 244px;
+	float: left;
+	display: inline-block;
+}
+.new-index-category-body .new-index-category-group .new-index-category-item{
+	padding: 5px 0;
+}
+.new-index-category-body .new-index-category-group .new-index-category-item a{
+	font-size: 14px;
+}
+.footer{
+	width: 100%;
+	height: 258px;
+	background:#333;
+	padding: 25px 0 0 ;
+}
+.footer .footer-service{
+	width: 1248px;
+	position: relative;
+    margin: 0 auto;
+    border: 0;
+    height: 143px;
+}
+.footer .footer-service .column{
+	width: 200px;
+    display: inline-block;
+    vertical-align: top;
+  
+}
+.column .title{
+	font-size: 16px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+ .column a{
+	color: #bbb;
+    display: block;
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.column a:hover{
+	color: #fff;
+}
+
+.follow-us{
+	position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid #555;
+    border-width: 0 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    width: 248px;
+    box-sizing: content-box;
+}
+.code{
+	display: none;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}
+.weixin:hover .code{
+	display: block;
+}
+.footer .company{
+	background-color: #000;
+    color: #999;
+    margin-top: 30px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 0;
+}
+
+/*登录蒙版样式*/
+.mask{
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 99998;
+    display: none;
+}
+
+.mask-in{
+	width: 520px;
+	height: 422px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -155px 0 0 -260px;
+    text-align: center;
+    padding: 30px 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    border-radius: 4px;
+    margin-top: -215px;
+}
+.mask-in img{
+	width: 106px;
+	height: 36px;
+}
+/*注册*/
+.mask-login{
+	width: 520px;
+	height: 306px;
+}
+.holder{
+	width: 286px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    height: 306px;
+
+}
+.login-link{
+	margin: 15px 0 20px;
+	height: 51px;
+}
+.login-link a{
+	background-image: url(http://huaban.com/img/login_icons_tiny.svg);
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    margin-right: 10px;
+    float: left;
+}
+.login-link a.weibo{
+	background-position: 0 0;
+}
+.login-link a.qzone{
+	background-position: -80px 0;
+}
+.login-link a.wechat{
+	background-position: -160px 0;
+}
+.login-link a.douban{
+	background-position: -240px 0;
+}
+.login-link a.renren{
+	background-position: -320px 0;
+}
+.login-link a.weibo:hover{
+	background-position: 0 -80px;
+}
+.login-link a.qzone:hover{
+	background-position: -80px -80px;
+}
+.login-link a.wechat:hover{
+	background-position: -160px -80px;
+}
+.login-link a.douban:hover{
+	background-position: -240px -80px;
+}
+.login-link a.renren:hover{
+	background-position: -320px -80px;
+}
+
+.mail-login{
+	margin-top: 15px;
+	width: 286px;
+	height: 134px;
+}
+
+.clear-input{
+	display: inline-block;
+    padding: 0 10px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 1;
+    color: #777;
+    background: #FCFCFC;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.btn18{
+	display: block;
+	width: 254px;
+	font-size: 18px;
+    padding: 0 15px;
+    border-radius: 3px;
+    height: 36px;
+    line-height: 36px;
+    text-shadow: none;
+    background: #ec414d;
+    color: #fff;
+    box-shadow: none;
+    border: 1px solid #ec414d;
+}
+
+.btn18:hover{
+	border-color: #E31725;
+    background: #E31725;
+    color: #fff;
+}
+
+.reset-pwd{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #9a0000;
+    font-size: 14px;
+}
+.switch{
+	text-align: right;
+    margin: 10px 0;
+	font-size: 14px;
+}
+.red-link{
+	 color: #9a0000;
+}
+.close{
+	width: 36px;
+    height: 36px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer
+}
+.close i{
+	width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    background: url(http://huaban.com/img/msg_close.png) 0 0 no-repeat;
+}
+/*返回顶部样式*/
