@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue1.text</title>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="root">{{msg}}</div>
+
+
+	<script>
+		var root = new Vue({
+			el:"#root",
+			data:{
+				msg:"hello world!"
+			}
+		})
+		setTimeout(function() {
+			root.$data.msg = 'bye world'
+		}, 2000)
+	</script>
+</body>
+</html>

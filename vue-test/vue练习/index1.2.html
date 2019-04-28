@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue入门</title>
+    <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <div @click="handleClick">{{content}}</div>
+        <div v-text="name"></div>
+        <div v-html="name"></div>
+        <div>{{name}}</div>
+    </div>
+    <script>
+        new Vue({
+            el: "#root",
+            data: {
+                content: "hello",
+                name: "<h1>tang</h1>"
+            },
+            methods: {
+                handleClick: function() {
+                    this.content = "world"
+                }
+
+            }
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta chaset="UTF-8">
+	<title>计算属性和侦听器</title>
+	<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="root">
+		姓：<input v-model="firstName"/>
+		名：<input v-model="lastName"/>
+		<div>{{fullName}}</div>
+		<div>{{count}}</div>
+	</div>
+	<script>
+		new Vue({
+			el: "#root",
+			data: {
+				firstName: '',
+				lastName: '',
+				count: 0
+			},
+			computed: {
+				/*fullName: function() {
+					return this.firstName+' '+this.lastName
+				}*/
+				fullName: {
+					get: function() {
+						return this.firstName+' '+this.lastName
+					},
+					set: function() {
+						var arr = value.split(" ");
+						this.firstName = arr[0];
+						this.lastName = arr[1];
+					}
+				}
+			},
+			watch: {
+				fullName: function() {
+					this.count++
+				}
+			}
+		})
+	</script>
+</body>
+</html>
